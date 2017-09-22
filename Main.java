@@ -6,6 +6,7 @@ public class Main {
 	public static void main(String[] args) throws IOException
 	{
 		Scanner input = new  Scanner (System.in);
+		System.out.println("Enter the files path : ");
 		String s = input.nextLine();
 			
 	File folder = new File(s);
@@ -66,7 +67,7 @@ public class Main {
 		System.out.print(files.get(i).getName()+" : "+"\t");
 		for (int j =0;j<count;j++)
 		{
-			System.out.print(+Math.round(BoW[i][j])+"\t");
+			System.out.print(+Math.round(BoW[i][j])+"\t\t");
 		}
 		System.out.println();
 	}
@@ -83,13 +84,13 @@ public class Main {
 		System.out.print(files.get(i).getName()+" : "+"\t");
 		for (int j =0;j<count;j++)
 		{
-			System.out.print(Math.round(Srtmat[i][j])+"\t");
+			System.out.print(Math.round(Srtmat[i][j])+"\t\t");
 		}
 		System.out.println();
 	}
 	System.out.println("....................................");
 	// display results in a fingermatching program 
-			System.out.print("\t\t");
+			System.out.print("\t");
 			for(i=0;i<count;i++)
 			{
 				System.out.print("\t"+files.get(i).getName());
@@ -100,7 +101,7 @@ public class Main {
 		System.out.print(files.get(i).getName()+" : "+"\t");
 		for (int j =0;j<count;j++)
 		{
-			System.out.print(Math.round(fingerprnt[i][j])+"\t");
+			System.out.print(Math.round(fingerprnt[i][j])+"\t\t");
 		}
 		System.out.println();
 	}
